@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@plugin "daisyui";
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #3D3D3DFF;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+}
+
+.dark {
+    --color-white: #3D3D3DFF;
+    --color-black: #ffffff;
+    --color-gray-100: #383838FF;
+    --color-gray-200: #383838FF;
+    --color-gray-300: #e2e8f0;
+    --color-gray-400: #cbd5e0;
+    --color-gray-500: #f7fafc;
+    --color-gray-600: #edf2f7;
+    --color-gray-700: #e2e8f0;
+}
+
+

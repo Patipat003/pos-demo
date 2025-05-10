@@ -1,0 +1,23 @@
+[
+    {
+        "branch_id":"1d8e61b9-f4aa-4027-8710-ac249fad6142",
+        "b_name":"Branch B",
+        "location":"China",
+        "google_location":"22.53589799431822,113.96118164062501",
+        "created_at":"2025-04-02T19:14:14.62887"
+    }, 
+    {
+        "branch_id":"06256969-8bb8-4015-b9dd-a901d939c9ff",
+        "b_name":"Branch A",
+        "location":"Taiwan",
+        "google_location":"19.101442216814426,108.67710113525392",
+        "created_at":"2025-04-02T19:13:34.54735"
+    }, 
+    {
+        "branch_id":"ed787277-9cd0-4c99-9b47-4f7f93a694d8",
+        "b_name":"Central Branch",
+        "location":"Thailand",
+        "google_location":"13.7563, 100.5018",
+        "created_at":"2025-04-02T19:05:41.199788"
+    }
+]
