@@ -172,7 +172,7 @@ const BranchViewModal = ({ branch, onClose }) => {
                   <MapContainer center={[latitude, longitude]} zoom={13} className="h-full w-full">
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Marker position={[latitude, longitude]} icon={customIcon}>
-                      <Popup>{branch.bname}</Popup>
+                      <Popup>{branch.b_name}</Popup>
                     </Marker>
                   </MapContainer>
                 </div>

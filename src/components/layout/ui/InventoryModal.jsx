@@ -3,7 +3,7 @@ import { Bar } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 import { useStockThreshold } from "../../../Contexts/StockThresholdContext";
 
-const InventoryModal = ({ selectedInventory, branches, handleCloseModal, userbranch_id }) => {
+const InventoryModal = ({ selectedInventory, branches, handleCloseModal, userBranchId }) => {
   
   const { lowStockThreshold } = useStockThreshold();
   
@@ -11,9 +11,9 @@ const InventoryModal = ({ selectedInventory, branches, handleCloseModal, userbra
 
   // ดึงข้อมูลสินค้าที่เกี่ยวข้อง
   const branchData = selectedInventory.relatedInventory.map((item) => ({
-    branch: branches[item.branchid]?.b_name || "Unknown",
+    branch: branches[item.branch_id]?.b_name || "Unknown",
     quantity: item.quantity,
-    isUserBranch: item.branchid === userBranchId, // เช็คว่าสาขาเป็นของผู้ใช้หรือไม่
+    isUserBranch: item.branch_id === userBranchId, // เช็คว่าสาขาเป็นของผู้ใช้หรือไม่
   }));
 
   // ข้อมูลกราฟ
