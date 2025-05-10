@@ -4,7 +4,7 @@ import { HiMoon, HiSun } from "react-icons/hi"; // ✅ Import Icons
 const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark" || 
-    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: light)").matches)
   );
 
   useEffect(() => {
