@@ -23,8 +23,8 @@ const Header = () => {
   const { lowStockThreshold } = useStockThreshold();
 
   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-  const dropdownRef = useRef(null);  // Reference to the dropdown container
-  const notificationDropdownRef = useRef(null);  // Reference to the notification dropdown container
+  const dropdownRef = useRef(null);
+  const notificationDropdownRef = useRef(null);
 
 
   const getUserDataFromToken = useCallback(() => {
@@ -63,10 +63,8 @@ const Header = () => {
       }
     };
 
-    // Add event listener
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Clean up event listener
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -121,10 +119,6 @@ const Header = () => {
         <button onClick={toggleFullscreen} className="text-red-600 ml-4">
           <HiArrowsExpand className="w-7 h-7" /> {isFullscreen  }
         </button>
-
-        {/* ปุ่ม Toggle โหมดมืด/สว่าง */}
-        <DarkModeToggle />
-
 
         {(salesNotifications.length > 0 || lowStockProducts.length > 0) && (
           <div className="relative" ref={notificationDropdownRef}>
